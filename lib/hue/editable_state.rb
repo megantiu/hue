@@ -4,6 +4,10 @@ module Hue
       @state['on']
     end
 
+    def off?
+      !@state['on']
+    end
+
     def on!
       self.on = true
     end
